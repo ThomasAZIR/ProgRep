@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client">
+    <children>
+        <Label id="lblTitre" alignment="CENTER" layoutX="207.0" layoutY="24.0" prefHeight="20.0" prefWidth="187.0" text=" Bienvenue sur le serveur de jeux !" textAlignment="CENTER" />
+        <Label id="lblCredits" alignment="CENTER" layoutX="107.0" layoutY="366.0" prefHeight="20.0" prefWidth="390.0" text="Réalisé par BOUYER Baptiste, CHARLES Anne-Laure &amp; SCHNEIDER Benoît" />
+        <Label id="lblInfos" alignment="CENTER" layoutX="13.0" layoutY="91.0" prefHeight="20.0" prefWidth="575.0" text="Souhaitez-vous jouer, ça tombe bien ! ?" />
+        <Button fx:id="btnPendu" layoutX="225.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionBtnPendu" prefHeight="35.0" prefWidth="150.0" text="Pendu" />
+        <Separator layoutY="34.0" prefHeight="43.0" prefWidth="600.0" />
+        <Separator layoutY="333.0" prefHeight="43.0" prefWidth="600.0" />
+        <Separator layoutX="174.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="33.0" />
+        <Separator layoutX="394.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="33.0" />
+    </children>
+</AnchorPane>
