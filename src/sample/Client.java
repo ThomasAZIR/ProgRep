@@ -38,11 +38,11 @@ public class Client extends Application {
 
     private static final int port = 8000; //port en global
     @FXML
-    private Button btnMorpion;
+    private Button btnAllumettes;
     @FXML
     private Button btnPendu;
     @FXML
-    private Button btnTaquin;
+    private Button btnOthello;
     @FXML
     private Label lblTitre;
     @FXML
@@ -85,12 +85,8 @@ public class Client extends Application {
 
     @FXML
     private void actionBtnPendu(ActionEvent event) {
-		/*btnTaquin.setText("CLIC PENDU !");
-		btnPendu.setText("CLIC PENDU !");
-		btnMorpion.setText("CLIC PENDU !");*/
 
-
-        Stage menu = (Stage) btnMorpion.getScene().getWindow();
+        Stage menu = (Stage) btnPendu.getScene().getWindow();
         menu.close();
 
 
@@ -104,6 +100,31 @@ public class Client extends Application {
             //stage.initModality(Modality.APPLICATION_MODAL); //pour cacher la zone fenetre de windows
             //stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Pendu");
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    @FXML
+    private void actionBtnAllumettes(ActionEvent event) {
+
+        Stage menu = (Stage) btnAllumettes.getScene().getWindow();
+        menu.close();
+
+
+        //lancement de la seconde fenetre
+
+        try{
+            Stage stage = new Stage();
+
+            BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("../Vues/allumettes.fxml"));
+            Scene scene = new Scene(root); //redimmension auto
+            stage.setTitle("Allumettes");
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();

@@ -4,6 +4,8 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+
 import modeles.ServJeuxInterface;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -96,11 +98,13 @@ public class penduControleur {
 
     public boolean victoire = false;
 
+    public String[] mots={"TEST","ORDINATEUR"};
+
     public void init() throws RemoteException, MalformedURLException, NotBoundException{
 
         ServJeuxInterface obj = (ServJeuxInterface) Naming.lookup("rmi://127.0.0.1:8000/jeux");
 
-        cmot = obj.motPendu();
+        cmot = mots[0];
 
         System.out.println("Mot : "+cmot);
 
@@ -141,115 +145,115 @@ public class penduControleur {
 
 
     public void btnclic (ActionEvent event) throws RemoteException {
-        Button boutonCliqué = (Button) event.getTarget();
+        Button boutonClique = (Button) event.getTarget();
         Button boutonNon = (Button) event.getTarget();
-        String boutonLabel = boutonCliqué.getText();
+        String boutonLabel = boutonClique.getText();
 
 
         int pos = 0;
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 0){
-            lab1.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 0){
+            lab1.setText(boutonClique.getText());
             pos=1;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 1){
-            lab2.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 1){
+            lab2.setText(boutonClique.getText());
             pos=2;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 2){
-            lab3.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 2){
+            lab3.setText(boutonClique.getText());
             pos=3;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 3){
-            lab4.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 3){
+            lab4.setText(boutonClique.getText());
             pos=4;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 4){
-            lab5.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 4){
+            lab5.setText(boutonClique.getText());
             pos=5;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 5){
-            lab6.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 5){
+            lab6.setText(boutonClique.getText());
             pos=6;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 6){
-            lab7.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 6){
+            lab7.setText(boutonClique.getText());
             pos=7;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 7){
-            lab8.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 7){
+            lab8.setText(boutonClique.getText());
             pos=8;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 8){
-            lab9.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 8){
+            lab9.setText(boutonClique.getText());
             pos=9;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 9){
-            lab10.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 9){
+            lab10.setText(boutonClique.getText());
             pos=10;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 10){
-            lab11.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 10){
+            lab11.setText(boutonClique.getText());
             pos=11;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 11){
-            lab12.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 11){
+            lab12.setText(boutonClique.getText());
             pos=12;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 12){
-            lab13.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 12){
+            lab13.setText(boutonClique.getText());
             pos=13;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 13){
-            lab14.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 13){
+            lab14.setText(boutonClique.getText());
             pos=14;
         }
-        if(cmot.toUpperCase().indexOf(boutonCliqué.getText(),pos) == 14){
-            lab15.setText(boutonCliqué.getText());
+        if(cmot.toUpperCase().indexOf(boutonClique.getText(),pos) == 14){
+            lab15.setText(boutonClique.getText());
             pos=15;
         }
         System.out.println(erreur);
         //S'il s'agit d'une mauvaise
-        if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 0){
+        if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 0){
             l1.setVisible(true);
             erreur=1;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 1){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 1){
             l2.setVisible(true);
             erreur=2;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 2){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 2){
             l3.setVisible(true);
             erreur=3;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 3){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 3){
             l4.setVisible(true);
             erreur=4;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 4){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 4){
             l5.setVisible(true);
             erreur=5;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 5){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 5){
             c6.setVisible(true);
             erreur=6;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 6){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 6){
             l7.setVisible(true);
             erreur=7;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 7){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 7){
             l8.setVisible(true);
             erreur=8;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 8){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 8){
             l9.setVisible(true);
             erreur=9;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 9){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 9){
             l10.setVisible(true);
             erreur=10;
         }
-        else if (cmot.toUpperCase().indexOf(boutonCliqué.getText()) == -1 && erreur == 10){
+        else if (cmot.toUpperCase().indexOf(boutonClique.getText()) == -1 && erreur == 10){
             l11.setVisible(true);
             erreur=11;
         }
@@ -258,7 +262,7 @@ public class penduControleur {
         }
 
         //cacher le bouton quand on clique dessus
-        boutonCliqué.setDisable(true);
+        boutonClique.setDisable(true);
 
         //si il gagne
         if( lab1.getText()!= "*" && lab2.getText()!="*" && lab3.getText()!="*" && lab4.getText()!="*"
@@ -274,7 +278,7 @@ public class penduControleur {
         // ajouter le bouton sélectionné dans une liste view
         ListView<String> list = new ListView<String>();
         ObservableList<String> items =FXCollections.observableArrayList (
-                boutonCliqué.getText());
+                boutonClique.getText());
         liste.getItems().add(items);
         //désactiver les boutons
         if(erreur==11 || victoire){
