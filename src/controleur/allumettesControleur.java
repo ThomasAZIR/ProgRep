@@ -47,11 +47,25 @@ public class allumettesControleur {
     int tas_allumettes = (int) (Math.random() * 50);
 
     int tour;
+
+    public void findepartie(){
+        btn_1.setDisable(true);
+        btn_2.setDisable(true);
+        btn_3.setDisable(true);
+    }
+
     public void checkdutas(){
-        if (tas_allumettes<=0 && tour == 0) id_display.setText("Gagné !");
-        else if (tas_allumettes<=0 && tour == 1) id_display.setText("Perdu !");
+        if (tas_allumettes<=0 && tour == 0) {
+            id_display.setText("Gagné !");
+            findepartie();
+        }
+        else if (tas_allumettes<=0 && tour == 1) {
+            id_display.setText("Perdu !");
+            findepartie();
+        }
         else if (tour == 0) tour_adverse();
     }
+
     public void tour_adverse(){
         tour = 1;
         int decision = 1 + (int) (Math.random() * 2);
@@ -59,8 +73,6 @@ public class allumettesControleur {
         id_nballumettes.setText(Integer.toString(tas_allumettes));
         checkdutas();
     }
-
-
 
     public void initialize() throws RemoteException, MalformedURLException, NotBoundException{
        ServJeuxInterface obj = (ServJeuxInterface) Naming.lookup("rmi://127.0.0.1:8000/jeux");
