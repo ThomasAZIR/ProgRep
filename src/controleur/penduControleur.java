@@ -75,6 +75,7 @@ public class penduControleur {
 
     public void finpartie(){
         id_proposition.setDisable(true);
+        id_mot.setText(motatrouver);
     }
 
     public void checketat(){
@@ -96,11 +97,11 @@ public class penduControleur {
         if (lettre.length() != 1) id_nessais.setText("Entrez une lettre !");
         else {
             id_nessais.setText("Il vous reste " + Integer.toString(nessais) + " essais !"); // on reset le label si jamais il y avait une erreur avant
-            lettresutilisees += lettre + " ";
+            lettresutilisees += lettre.toUpperCase() + " ";
             id_used.setText(lettresutilisees);
 
             for (int i = 0; i < motatrouver.length(); i++) {
-                if (lettre.toUpperCase().equals(String.valueOf(motatrouver.charAt(i)))) {// un peu moche mais apparemment je ne peux pas caster un char en String
+                if (lettre.toUpperCase().equals(String.valueOf(motatrouver.charAt(i)))) {
                     check = true;
                     ind = i;
                     // /////
@@ -108,12 +109,21 @@ public class penduControleur {
                     test[ind] = lettre.charAt(0);
                     motcache = new String(test);
                     id_mot.setText(motcache.toUpperCase());
-                    nlettrescachees -=1;
+
+                    // Correction du bug occasionné par le fait d'entrer plusieurs fois une meme lettre
+                    boolean debug = false;
+                    char[] dejavu = lettresutilisees.toCharArray();
+                    for (int j = 0; j < lettresutilisees.length(); j++){
+                        if (dejavu[j] == lettre.toUpperCase().toCharArray()[0]) {
+                            debug = true;
+                        }
+                    }
+                    if (debug == false)  nlettrescachees -=1;
                 }
 
             }
             // à partir de là on sait si la lettre est dans le mot ou pas, et où
-            if (! check) {
+            if (check == false) {
                 nessais -=1;
                 id_nessais.setText("Il vous reste " + Integer.toString(nessais) + " essais !");
             }
