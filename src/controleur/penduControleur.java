@@ -113,14 +113,15 @@ public class penduControleur {
                     // Correction du bug occasionné par le fait d'entrer plusieurs fois une meme lettre
                     boolean debug = false;
                     char[] dejavu = lettresutilisees.toCharArray();
-                    for (int j = 0; j < lettresutilisees.length(); j++){
+                    for (int j = 0; j < lettresutilisees.length() - 2 ; j++){ // moins le dernier caractère ET l'espace
                         if (dejavu[j] == lettre.toUpperCase().toCharArray()[0]) {
                             debug = true;
                         }
                     }
-                    if (debug == false)  nlettrescachees -=1;
+                    if (debug == false)  {
+                        nlettrescachees -=1;
+                    }
                 }
-
             }
             // à partir de là on sait si la lettre est dans le mot ou pas, et où
             if (check == false) {
