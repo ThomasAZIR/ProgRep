@@ -66,6 +66,7 @@ public class Client extends Application {
             primaryStage.setResizable(false);
             primaryStage.show();
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -135,5 +136,29 @@ public class Client extends Application {
         }
 
     }
+    @FXML
+    private void actionBtnOthello(ActionEvent event) {
 
+        Stage menu = (Stage) btnOthello.getScene().getWindow();
+        menu.close();
+
+
+        //lancement de la seconde fenetre
+
+        try{
+            Stage stage = new Stage();
+
+            BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("../Vues/othello.fxml"));
+            Scene scene = new Scene(root); //redimmension auto
+            stage.setTitle("Othello");
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }

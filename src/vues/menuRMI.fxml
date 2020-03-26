@@ -5,16 +5,15 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client">
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client">
     <children>
         <Label id="lblTitre" alignment="CENTER" layoutX="207.0" layoutY="24.0" prefHeight="20.0" prefWidth="187.0" text="Serveur de jeux RMI" textAlignment="CENTER" />
-        <Label id="lblCredits" alignment="CENTER" layoutX="107.0" layoutY="366.0" prefHeight="20.0" prefWidth="390.0" text="Eck, Satori, Vin" />
-        <Label id="lblInfos" alignment="CENTER" layoutX="13.0" layoutY="91.0" prefHeight="20.0" prefWidth="575.0" text="Choisissez un des jeux suivants :" />
+        <Label id="lblCredits" alignment="CENTER" layoutX="105.0" layoutY="246.0" prefHeight="20.0" prefWidth="390.0" text="Eck, Satori, Vin" />
+        <Label id="lblInfos" alignment="CENTER" layoutX="13.0" layoutY="72.0" prefHeight="20.0" prefWidth="575.0" text="Choisissez un des jeux suivants :" />
         <Button fx:id="btnPendu" layoutX="225.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionBtnPendu" prefHeight="35.0" prefWidth="150.0" text="Pendu" />
-        <Separator layoutY="34.0" prefHeight="43.0" prefWidth="600.0" />
-        <Separator layoutY="333.0" prefHeight="43.0" prefWidth="600.0" />
-        <Separator layoutX="174.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="33.0" />
-        <Separator layoutX="394.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="33.0" />
       <Button fx:id="btnAllumettes" layoutX="32.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionBtnAllumettes" prefHeight="35.0" prefWidth="150.0" text="Allumettes" />
+      <Separator layoutX="-13.0" layoutY="62.0" prefHeight="10.0" prefWidth="616.0" />
+      <Separator layoutX="-15.0" layoutY="236.0" prefHeight="10.0" prefWidth="631.0" />
+      <Button fx:id="btnOthello" layoutX="420.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionBtnOthello" prefHeight="35.0" prefWidth="150.0" text="Othello (2J)" />
     </children>
 </AnchorPane>

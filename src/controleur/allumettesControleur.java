@@ -56,14 +56,16 @@ public class allumettesControleur {
 
     public void checkdutas(){
         if (tas_allumettes<=0 && tour == 0) {
-            id_display.setText("Gagné !");
-            findepartie();
-        }
-        else if (tas_allumettes<=0 && tour == 1) {
             id_display.setText("Perdu !");
             findepartie();
         }
-        else if (tour == 0) tour_adverse();
+        else if (tas_allumettes<=0 && tour == 1) {
+            id_display.setText("Gagné !");
+            findepartie();
+        }
+        else if (tour == 0) {
+            tour_adverse();
+        }
     }
 
     public void tour_adverse(){
