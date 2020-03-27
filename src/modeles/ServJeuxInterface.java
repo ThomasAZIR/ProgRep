@@ -7,8 +7,6 @@ import java.rmi.*;
 public interface ServJeuxInterface extends Remote {
     //Test
     public String echo () throws RemoteException;
-    //Pendu
-    public String motPendu() throws RemoteException;
 
 
 }
