@@ -28,410 +28,276 @@ import modeles.Case;
 import modeles.ServJeuxInterface;
 
 
-public class othelloControleur{
+public class othelloControleur {
 
     @FXML
     private Pane pane00;
-
     @FXML
     private Circle cercle00;
-
     @FXML
     private Pane pane10;
-
     @FXML
     private Circle cercle10;
-
     @FXML
     private Pane pane20;
-
     @FXML
     private Circle cercle20;
-
     @FXML
     private Pane pane30;
-
     @FXML
     private Circle cercle30;
-
     @FXML
     private Pane pane40;
-
     @FXML
     private Circle cercle40;
-
     @FXML
     private Pane pane50;
-
     @FXML
     private Circle cercle50;
-
     @FXML
     private Pane pane60;
-
     @FXML
     private Circle cercle60;
-
     @FXML
     private Pane pane70;
-
     @FXML
     private Circle cercle70;
-
     @FXML
     private Pane pane01;
-
     @FXML
     private Circle cercle01;
-
     @FXML
     private Pane pane11;
-
     @FXML
     private Circle cercle11;
-
     @FXML
     private Pane pane21;
-
     @FXML
     private Circle cercle21;
-
     @FXML
     private Pane pane31;
-
     @FXML
     private Circle cercle31;
-
     @FXML
     private Pane pane41;
-
     @FXML
     private Circle cercle41;
-
     @FXML
     private Pane pane51;
-
     @FXML
     private Circle cercle51;
-
     @FXML
     private Pane pane61;
-
     @FXML
     private Circle cercle61;
-
     @FXML
     private Pane pane71;
-
     @FXML
     private Circle cercle71;
-
     @FXML
     private Pane pane02;
-
     @FXML
     private Circle cercle02;
-
     @FXML
     private Pane pane12;
-
     @FXML
     private Circle cercle12;
-
     @FXML
     private Pane pane22;
-
     @FXML
     private Circle cercle22;
-
     @FXML
     private Pane pane32;
-
     @FXML
     private Circle cercle32;
-
     @FXML
     private Pane pane42;
-
     @FXML
     private Circle cercle42;
-
     @FXML
     private Pane pane52;
-
     @FXML
     private Circle cercle52;
-
     @FXML
     private Pane pane62;
-
     @FXML
     private Circle cercle62;
-
     @FXML
     private Pane pane72;
-
     @FXML
     private Circle cercle72;
-
     @FXML
     private Pane pane03;
-
     @FXML
     private Circle cercle03;
-
     @FXML
     private Pane pane13;
-
     @FXML
     private Circle cercle13;
-
     @FXML
     private Pane pane23;
-
     @FXML
     private Circle cercle23;
-
     @FXML
     private Pane pane33;
-
     @FXML
     private Circle cercle33;
-
     @FXML
     private Pane pane43;
-
     @FXML
     private Circle cercle43;
-
     @FXML
     private Pane pane53;
-
     @FXML
     private Circle cercle53;
-
     @FXML
     private Pane pane63;
-
     @FXML
     private Circle cercle63;
-
     @FXML
     private Pane pane73;
-
     @FXML
     private Circle cercle73;
-
     @FXML
     private Pane pane04;
-
     @FXML
     private Circle cercle04;
-
     @FXML
     private Pane pane14;
-
     @FXML
     private Circle cercle14;
-
     @FXML
     private Pane pane24;
-
     @FXML
     private Circle cercle24;
-
     @FXML
     private Pane pane34;
-
     @FXML
     private Circle cercle34;
-
     @FXML
     private Pane pane44;
-
     @FXML
     private Circle cercle44;
-
     @FXML
     private Pane pane54;
-
     @FXML
     private Circle cercle54;
-
     @FXML
     private Pane pane64;
-
     @FXML
     private Circle cercle64;
-
     @FXML
     private Pane pane74;
-
     @FXML
     private Circle cercle74;
-
     @FXML
     private Pane pane05;
-
     @FXML
     private Circle cercle05;
-
     @FXML
     private Pane pane15;
-
     @FXML
     private Circle cercle15;
-
     @FXML
     private Pane pane25;
-
     @FXML
     private Circle cercle25;
-
     @FXML
     private Pane pane35;
-
     @FXML
     private Circle cercle35;
-
     @FXML
     private Pane pane45;
-
     @FXML
     private Circle cercle45;
-
     @FXML
     private Pane pane55;
-
     @FXML
     private Circle cercle55;
-
     @FXML
     private Pane pane65;
-
     @FXML
     private Circle cercle65;
-
     @FXML
     private Pane pane75;
-
     @FXML
     private Circle cercle75;
-
     @FXML
     private Pane pane06;
-
     @FXML
     private Circle cercle06;
-
     @FXML
     private Pane pane16;
-
     @FXML
     private Circle cercle16;
-
     @FXML
     private Pane pane26;
-
     @FXML
     private Circle cercle26;
-
     @FXML
     private Pane pane36;
-
     @FXML
     private Circle cercle36;
-
     @FXML
     private Pane pane46;
-
     @FXML
     private Circle cercle46;
-
     @FXML
     private Pane pane56;
-
     @FXML
     private Circle cercle56;
-
     @FXML
     private Pane pane66;
-
     @FXML
     private Circle cercle66;
-
     @FXML
     private Pane pane76;
-
     @FXML
     private Circle cercle76;
-
     @FXML
     private Pane pane07;
-
     @FXML
     private Circle cercle07;
-
     @FXML
     private Pane pane17;
-
     @FXML
     private Circle cercle17;
-
     @FXML
     private Pane pane27;
-
     @FXML
     private Circle cercle27;
-
     @FXML
     private Pane pane37;
-
     @FXML
     private Circle cercle37;
-
     @FXML
     private Pane pane47;
-
     @FXML
     private Circle cercle47;
-
     @FXML
     private Pane pane57;
-
     @FXML
     private Circle cercle57;
-
     @FXML
     private Pane pane67;
-
     @FXML
     private Circle cercle67;
-
     @FXML
     private Pane pane77;
-
     @FXML
     private Circle cercle77;
-
     @FXML
     private Button jouer;
-
     @FXML
     private Label txtnoir;
-
     @FXML
     private Label txtblanc;
-
     @FXML
     private Scene sceneMenu;
-
     @FXML
     private Label lbl_propend1;
-
     @FXML
     private Label lbl_propend2;
-
     @FXML
     private Button btn_quitter;
 
@@ -1513,10 +1379,22 @@ public class othelloControleur{
         }
 
     }
+    void getNumjoueur() throws RemoteException, InterruptedException {
+        numjoueur = placejoueur();
+        if(numjoueur == 1) {
+            couleurj = "noir";
+            couleura = "blanc";
+            numautre = 2;
+        }
+        else {
+            couleurj = "blanc";
+            couleura = "noir";
+            numautre = 1;
+        }
 
+    }
     @FXML
-    public void initialize() throws RemoteException, MalformedURLException, NotBoundException{
-
+    public void initialize() throws RemoteException, MalformedURLException, NotBoundException, InterruptedException {
         for (int i=0; i<8; i++){
             plateaucercle.add(new ArrayList<Circle>());
         }
@@ -1637,20 +1515,7 @@ public class othelloControleur{
 
     }
 
-    void getNumjoueur() throws RemoteException, InterruptedException {
-        numjoueur = placejoueur();
-        if(numjoueur == 1) {
-            couleurj = "noir";
-            couleura = "blanc";
-            numautre = 2;
-        }
-        else {
-            couleurj = "blanc";
-            couleura = "noir";
-            numautre = 1;
-        }
 
-    }
 
     @FXML
     void quitter(MouseEvent event) throws RemoteException {
@@ -1659,7 +1524,7 @@ public class othelloControleur{
         restart();
     }
 
-    void rejouer() throws RemoteException{
+    void rejouer(MouseEvent event) throws RemoteException{
         reInitPlateau();
     }
 
