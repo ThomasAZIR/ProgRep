@@ -8,13 +8,18 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -1510,11 +1515,12 @@ public class othelloControleur{
     }
 
     @FXML
-    public void initialize(URL arg0, ResourceBundle arg1){
+    public void initialize() throws RemoteException, MalformedURLException, NotBoundException{
 
         for (int i=0; i<8; i++){
             plateaucercle.add(new ArrayList<Circle>());
         }
+        // ////////////////////////////////////////
         plateaucercle.get(0).add(0,cercle00);
         plateaucercle.get(0).add(1,cercle01);
         plateaucercle.get(0).add(2,cercle02);
@@ -1587,6 +1593,7 @@ public class othelloControleur{
         plateaucercle.get(7).add(6,cercle76);
         plateaucercle.get(7).add(7,cercle77);
 
+ // /////////////////////////////////
         try {
             ServJeuxInterface obj = (ServJeuxInterface) Naming.lookup("rmi://127.0.0.1:8000/jeux");
             initPlateau();
@@ -1620,8 +1627,6 @@ public class othelloControleur{
                     });
                 }
             });   affichageThread.start();
-
-
 
 
         } catch (MalformedURLException | RemoteException | NotBoundException e) {
@@ -1664,4 +1669,47 @@ public class othelloControleur{
         btn_quitter.setVisible(false);
     }
 
+    public void menuClic(ActionEvent evt) throws RemoteException {
+        MenuItem menuClique = (MenuItem) evt.getTarget();
+        String menuLabel = menuClique.getText();
+
+        if ("Rejouer".equals(menuLabel)){
+            //recup de la fenetre a l'aide d'un element
+            Stage stageCourant = (Stage) cercle00.getScene().getWindow();
+            stageCourant.close();
+            //lancement de la seconde fenetre
+            try{
+                Stage stage = new Stage();
+                BorderPane root = (BorderPane) FXMLLoader.load(getClass().getResource("../Vues/othello.fxml"));
+                Scene scene = new Scene(root); //redimmension auto
+                //stage.initModality(Modality.APPLICATION_MODAL); //pour cacher la zone fenetre de windows
+                //stage.initStyle(StageStyle.UNDECORATED);
+                stage.setTitle("Pendu");
+                stage.setScene(scene);
+                stage.setResizable(false);
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        if ("Retour".equals(menuLabel)){
+            //recup de la fenetre a l'aide d'un element
+            Stage stageCourant = (Stage) cercle00.getScene().getWindow();
+            stageCourant.close();
+            //lancement de la seconde fenetre
+            try{
+                Stage stage = new Stage();
+                AnchorPane root = FXMLLoader.load(getClass().getResource("../Vues/menuRMI.fxml"));
+                Scene scene = new Scene(root); //redimmension auto
+                stage.setTitle("Pendu");
+                stage.setScene(scene);
+                stage.setResizable(false);
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
 }

@@ -2,6 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,16 +15,15 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.othelloControleur">
-   <top>
+<BorderPane prefHeight="400.0" prefWidth="211.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.othelloControleur">
+   <center>
       <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #4B4B4B;" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="400.0" prefWidth="712.0" style="-fx-background-color: #4B4B4B;">
+            <HBox prefHeight="400.0" prefWidth="587.0" style="-fx-background-color: #4B4B4B;">
                <children>
-                  <Pane prefHeight="400.0" prefWidth="565.0" style="-fx-background-color: #4B4B4B;">
+                  <Pane prefHeight="400.0" prefWidth="451.0" style="-fx-background-color: #4B4B4B;">
                      <children>
-                        <GridPane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="511.0">
+                        <GridPane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="434.0">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -367,7 +369,7 @@
                         </GridPane>
                      </children>
                   </Pane>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
+                  <Pane prefHeight="400.0" prefWidth="161.0">
                      <children>
                         <Button fx:id="jouer" layoutX="40.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#commencer" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: white;" text="JOUER" visible="false" />
                         <Pane layoutX="13.0" layoutY="20.0" prefHeight="123.0" prefWidth="138.0" style="-fx-background-color: lightgrey;">
@@ -401,5 +403,17 @@
             </HBox>
          </children>
       </AnchorPane>
+   </center>
+   <top>
+      <MenuBar fx:id="menu" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menufi" mnemonicParsing="false" text="Fichier">
+            <items>
+              <MenuItem fx:id="menuRej" mnemonicParsing="false" onAction="#menuClic" text="Rejouer" />
+                  <MenuItem fx:id="menuRet" mnemonicParsing="false" onAction="#menuClic" text="Retour" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </top>
 </BorderPane>
