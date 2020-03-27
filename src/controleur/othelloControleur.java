@@ -645,13 +645,6 @@ public class othelloControleur {
         }
     }
 
-    /* Le main */
-    public int main () throws RemoteException {
-
-        return 0;
-    }
-
-
     public void choisirCoup(int lig, int col, int numjoueur) throws RemoteException {
 
     }
@@ -691,11 +684,6 @@ public class othelloControleur {
         j1 = false;
         j2 = false;
     }
-
-
-
-
-
 
     @FXML
     void commencer(MouseEvent event) {
@@ -1395,6 +1383,7 @@ public class othelloControleur {
     }
     @FXML
     public void initialize() throws RemoteException, MalformedURLException, NotBoundException, InterruptedException {
+       getNumjoueur();
         for (int i=0; i<8; i++){
             plateaucercle.add(new ArrayList<Circle>());
         }
