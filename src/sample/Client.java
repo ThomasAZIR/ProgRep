@@ -147,13 +147,23 @@ public class Client extends Application {
 
         try{
             Stage stage = new Stage();
+            Stage stage1 = new Stage();
 
             BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("../Vues/othello.fxml"));
+            BorderPane root1 = (BorderPane)FXMLLoader.load(getClass().getResource("../Vues/othello.fxml"));
+
             Scene scene = new Scene(root); //redimmension auto
+            Scene scene1 = new Scene(root1); //redimmension auto
+
             stage.setTitle("Othello");
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+
+            stage1.setTitle("Othello");
+            stage1.setScene(scene1);
+            stage1.setResizable(false);
+            stage1.show();
 
 
         } catch (Exception e) {

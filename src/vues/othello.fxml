@@ -17,11 +17,11 @@
 
 <BorderPane prefHeight="400.0" prefWidth="211.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.othelloControleur">
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #4B4B4B;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="672.0" prefWidth="587.0" style="-fx-background-color: #4B4B4B;" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="400.0" prefWidth="587.0" style="-fx-background-color: #4B4B4B;">
+            <HBox prefHeight="400.0" prefWidth="456.0" style="-fx-background-color: #4B4B4B;">
                <children>
-                  <Pane prefHeight="400.0" prefWidth="451.0" style="-fx-background-color: #4B4B4B;">
+                  <Pane prefHeight="400.0" prefWidth="471.0" style="-fx-background-color: #ffffff;">
                      <children>
                         <GridPane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="434.0">
                            <columnConstraints>
@@ -50,7 +50,7 @@
                                     <Circle fx:id="cercle00" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane10" onMouseClicked="#placerCercle10" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="1">
+                              <Pane fx:id="pane10" onMouseClicked="#placerCercle10" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="1">
                                  <children>
                                     <Circle fx:id="cercle10" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -60,7 +60,7 @@
                                     <Circle fx:id="cercle20" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane30" onMouseClicked="#placerCercle30" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="3">
+                              <Pane fx:id="pane30" onMouseClicked="#placerCercle30" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="3">
                                  <children>
                                     <Circle fx:id="cercle30" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -70,7 +70,7 @@
                                     <Circle fx:id="cercle40" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane50" onMouseClicked="#placerCercle50" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="5">
+                              <Pane fx:id="pane50" onMouseClicked="#placerCercle50" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="5">
                                  <children>
                                     <Circle fx:id="cercle50" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -80,12 +80,12 @@
                                     <Circle fx:id="cercle60" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane70" onMouseClicked="#placerCercle70" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="7">
+                              <Pane fx:id="pane70" onMouseClicked="#placerCercle70" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="7">
                                  <children>
                                     <Circle fx:id="cercle70" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane01" onMouseClicked="#placerCercle01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.rowIndex="1">
+                              <Pane fx:id="pane01" onMouseClicked="#placerCercle01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.rowIndex="1">
                                  <children>
                                     <Circle fx:id="cercle01" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -95,7 +95,7 @@
                                     <Circle fx:id="cercle11" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane21" onMouseClicked="#placerCercle21" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <Pane fx:id="pane21" onMouseClicked="#placerCercle21" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <children>
                                     <Circle fx:id="cercle21" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -105,7 +105,7 @@
                                     <Circle fx:id="cercle31" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane41" onMouseClicked="#placerCercle41" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                              <Pane fx:id="pane41" onMouseClicked="#placerCercle41" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                  <children>
                                     <Circle fx:id="cercle41" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -115,7 +115,7 @@
                                     <Circle fx:id="cercle51" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane61" onMouseClicked="#placerCercle61" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                              <Pane fx:id="pane61" onMouseClicked="#placerCercle61" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="6" GridPane.rowIndex="1">
                                  <children>
                                     <Circle fx:id="cercle61" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -130,7 +130,7 @@
                                     <Circle fx:id="cercle02" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane12" onMouseClicked="#placerCercl12" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <Pane fx:id="pane12" onMouseClicked="#placerCercl12" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <children>
                                     <Circle fx:id="cercle12" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -140,7 +140,7 @@
                                     <Circle fx:id="cercle22" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane32" onMouseClicked="#placerCercle32" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                              <Pane fx:id="pane32" onMouseClicked="#placerCercle32" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                  <children>
                                     <Circle fx:id="cercle32" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -150,7 +150,7 @@
                                     <Circle fx:id="cercle42" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane52" onMouseClicked="#placerCercle52" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                              <Pane fx:id="pane52" onMouseClicked="#placerCercle52" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="5" GridPane.rowIndex="2">
                                  <children>
                                     <Circle fx:id="cercle52" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -160,12 +160,12 @@
                                     <Circle fx:id="cercle62" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane72" onMouseClicked="#placerCercle72" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                              <Pane fx:id="pane72" onMouseClicked="#placerCercle72" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="7" GridPane.rowIndex="2">
                                  <children>
                                     <Circle fx:id="cercle72" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane03" onMouseClicked="#placerCercle03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.rowIndex="3">
+                              <Pane fx:id="pane03" onMouseClicked="#placerCercle03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.rowIndex="3">
                                  <children>
                                     <Circle fx:id="cercle03" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -175,7 +175,7 @@
                                     <Circle fx:id="cercle13" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane23" onMouseClicked="#placerCercle23" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Pane fx:id="pane23" onMouseClicked="#placerCercle23" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <children>
                                     <Circle fx:id="cercle23" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -185,7 +185,7 @@
                                     <Circle fx:id="cercle33" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane43" onMouseClicked="#placerCercle43" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                              <Pane fx:id="pane43" onMouseClicked="#placerCercle43" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                  <children>
                                     <Circle fx:id="cercle43" fill="#424444" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -195,7 +195,7 @@
                                     <Circle fx:id="cercle53" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane63" onMouseClicked="#placerCercle63" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                              <Pane fx:id="pane63" onMouseClicked="#placerCercle63" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="6" GridPane.rowIndex="3">
                                  <children>
                                     <Circle fx:id="cercle63" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -210,7 +210,7 @@
                                     <Circle fx:id="cercle04" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane14" onMouseClicked="#placerCercle14" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Pane fx:id="pane14" onMouseClicked="#placerCercle14" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <children>
                                     <Circle fx:id="cercle14" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -220,7 +220,7 @@
                                     <Circle fx:id="cercle24" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane34" onMouseClicked="#placerCercle34" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                              <Pane fx:id="pane34" onMouseClicked="#placerCercle34" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                  <children>
                                     <Circle fx:id="cercle34" fill="#424444" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -230,7 +230,7 @@
                                     <Circle fx:id="cercle44" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane54" onMouseClicked="#placerCercle54" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                              <Pane fx:id="pane54" onMouseClicked="#placerCercle54" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="5" GridPane.rowIndex="4">
                                  <children>
                                     <Circle fx:id="cercle54" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -240,12 +240,12 @@
                                     <Circle fx:id="cercle64" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane74" onMouseClicked="#placerCercle74" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                              <Pane fx:id="pane74" onMouseClicked="#placerCercle74" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="7" GridPane.rowIndex="4">
                                  <children>
                                     <Circle fx:id="cercle74" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane05" onMouseClicked="#placerCercle05" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.rowIndex="5">
+                              <Pane fx:id="pane05" onMouseClicked="#placerCercle05" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.rowIndex="5">
                                  <children>
                                     <Circle fx:id="cercle05" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -255,7 +255,7 @@
                                     <Circle fx:id="cercle15" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane25" onMouseClicked="#placerCercle25" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                              <Pane fx:id="pane25" onMouseClicked="#placerCercle25" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                                  <children>
                                     <Circle fx:id="cercle25" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -265,7 +265,7 @@
                                     <Circle fx:id="cercle35" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane45" onMouseClicked="#placerCercle45" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                              <Pane fx:id="pane45" onMouseClicked="#placerCercle45" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="4" GridPane.rowIndex="5">
                                  <children>
                                     <Circle fx:id="cercle45" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -275,7 +275,7 @@
                                     <Circle fx:id="cercle55" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane65" onMouseClicked="#placerCercle65" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                              <Pane fx:id="pane65" onMouseClicked="#placerCercle65" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="6" GridPane.rowIndex="5">
                                  <children>
                                     <Circle fx:id="cercle65" fill="#fdfefe" layoutX="32.0" layoutY="24.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -290,7 +290,7 @@
                                     <Circle fx:id="cercle06" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane16" onMouseClicked="#placerCercle16" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                              <Pane fx:id="pane16" onMouseClicked="#placerCercle16" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                  <children>
                                     <Circle fx:id="cercle16" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -300,7 +300,7 @@
                                     <Circle fx:id="cercle26" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane36" onMouseClicked="#placerCercle36" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                              <Pane fx:id="pane36" onMouseClicked="#placerCercle36" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                  <children>
                                     <Circle fx:id="cercle36" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -310,7 +310,7 @@
                                     <Circle fx:id="cercle46" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane56" onMouseClicked="#placerCercle56" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                              <Pane fx:id="pane56" onMouseClicked="#placerCercle56" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="5" GridPane.rowIndex="6">
                                  <children>
                                     <Circle fx:id="cercle56" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -320,12 +320,12 @@
                                     <Circle fx:id="cercle66" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane76" onMouseClicked="#placerCercle76" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                              <Pane fx:id="pane76" onMouseClicked="#placerCercle76" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="7" GridPane.rowIndex="6">
                                  <children>
                                     <Circle fx:id="cercle76" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane07" onMouseClicked="#placerCercle07" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.rowIndex="7">
+                              <Pane fx:id="pane07" onMouseClicked="#placerCercle07" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.rowIndex="7">
                                  <children>
                                     <Circle fx:id="cercle07" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -335,7 +335,7 @@
                                     <Circle fx:id="cercle17" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane27" onMouseClicked="#placerCercle27" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                              <Pane fx:id="pane27" onMouseClicked="#placerCercle27" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="2" GridPane.rowIndex="7">
                                  <children>
                                     <Circle fx:id="cercle27" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -345,7 +345,7 @@
                                     <Circle fx:id="cercle37" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane47" onMouseClicked="#placerCercle47" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                              <Pane fx:id="pane47" onMouseClicked="#placerCercle47" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="4" GridPane.rowIndex="7">
                                  <children>
                                     <Circle fx:id="cercle47" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -355,7 +355,7 @@
                                     <Circle fx:id="cercle57" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="pane67" onMouseClicked="#placerCercle67" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CA559;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                              <Pane fx:id="pane67" onMouseClicked="#placerCercle67" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00CED1;" GridPane.columnIndex="6" GridPane.rowIndex="7">
                                  <children>
                                     <Circle fx:id="cercle67" fill="#fdfefe" layoutX="32.0" layoutY="23.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
                                  </children>
@@ -367,36 +367,6 @@
                               </Pane>
                            </children>
                         </GridPane>
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="400.0" prefWidth="161.0">
-                     <children>
-                        <Button fx:id="jouer" layoutX="40.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#commencer" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: white;" text="JOUER" visible="false" />
-                        <Pane layoutX="13.0" layoutY="20.0" prefHeight="123.0" prefWidth="138.0" style="-fx-background-color: lightgrey;">
-                           <children>
-                              <Label fx:id="txtnoir" alignment="CENTER" layoutX="3.0" layoutY="5.0" prefHeight="113.0" prefWidth="132.0" text="NOIR" textAlignment="CENTER">
-                                 <font>
-                                    <Font size="10.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="txtblanc" layoutX="39.0" layoutY="53.0" text="BLANC" textFill="WHITE" visible="false">
-                                 <font>
-                                    <Font name="System Bold" size="23.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </Pane>
-                        <Label id="lbl_panend1" fx:id="lbl_propend1" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="158.0" prefHeight="84.0" prefWidth="160.0" text="lbl" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                        </Label>
-                        <Label id="lbl_propend2" fx:id="lbl_propend2" alignment="CENTER" layoutX="8.0" layoutY="249.0" prefHeight="47.0" prefWidth="160.0" text="Le mot était :" textFill="WHITE">
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                        </Label>
-                        <Button id="btn_quitter" fx:id="btn_quitter" layoutX="18.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#quitter" prefHeight="47.0" prefWidth="138.0" text="Quitter" />
                      </children>
                   </Pane>
                </children>
@@ -416,4 +386,36 @@
         </menus>
       </MenuBar>
    </top>
+   <bottom>
+      <Pane prefHeight="168.0" prefWidth="432.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="jouer" layoutX="40.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#commencer" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: white;" text="JOUER" visible="false" />
+            <Pane layoutY="20.0" prefHeight="123.0" prefWidth="138.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <Label fx:id="txtnoir" alignment="CENTER" layoutX="3.0" layoutY="5.0" prefHeight="113.0" prefWidth="132.0" text="NOIR" textAlignment="CENTER">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtblanc" layoutX="39.0" layoutY="53.0" text="BLANC" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label id="lbl_panend1" fx:id="lbl_propend1" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="39.0" prefHeight="84.0" prefWidth="149.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label id="lbl_propend2" fx:id="lbl_propend2" alignment="CENTER" layoutX="304.0" layoutY="19.0" prefHeight="47.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button id="btn_quitter" fx:id="btn_quitter" layoutX="304.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#quitter" prefHeight="47.0" prefWidth="138.0" text="Quitter" />
+         </children>
+      </Pane>
+   </bottom>
 </BorderPane>
